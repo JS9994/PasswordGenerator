@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Sets consistent scaling of viewport across devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Sets favicon -->
+    <link rel="icon" type="image/svg+xml" href="./Assets/Images/calculator-favicon.svg">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Password Generator</title>
+
+    <!-- Reset CSS link to remove preset styles across browsers -->
+    <link rel="stylesheet" href="./Assets/CSS/reset.css">
+
+    <!-- CSS Stylesheet Link -->
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+
+      <header>
+        <h1>Password Generator</h1>
+      </header>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>Let's get generating!</h2>
+        </div>
+        <div class="card-body">
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
+        </div>
+
+        <div class="card-footer">
+          <button id="generate" class="btn">Generate Password</button>
+        </div>
+        
+      </div>
+    </div>
+    <!-- Links to main JS file for password generator -->
+    <script src="./Assets/Scripts/script.js"></script>
+  </body>
+</html>
